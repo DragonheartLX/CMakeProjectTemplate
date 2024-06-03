@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.19)
 
 # For clang
-set(VCPKG_TARGET_TRIPLET "x64-mingw-static")
+# set(VCPKG_TARGET_TRIPLET "x64-mingw-static")
 
 set(CMAKE_CXX_STANDARD 20)
 
