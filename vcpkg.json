@@ -1,10 +1,8 @@
 {
-    "name": "project-template",
-    "version": "0.0.0-dev",
-    "dependencies": 
-    [
-      "glfw3",
-      "glad"
-    ]
-  }
-  
+  "name": "project-template",
+  "version": "0.0.0-dev",
+  "dependencies": [
+    "glfw3",
+    "glad"
+  ]
+}

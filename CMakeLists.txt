@@ -1,8 +1,5 @@
 cmake_minimum_required (VERSION 3.19)
 
-# For clang
-# set(VCPKG_TARGET_TRIPLET "x64-mingw-static")
-
 set(CMAKE_CXX_STANDARD 20)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY $<1:${CMAKE_BINARY_DIR}/bin>)
@@ -16,12 +13,12 @@ file(GLOB_RECURSE PROJ_Src LIST_DIRECTORIES false
     src/*.cpp
     src/**/*.cpp)
 
-add_executable(ProjectTemplate ${PROJ_Src})
+add_executable(${PROJECT_NAME} ${PROJ_Src})
 
-target_include_directories(ProjectTemplate PRIVATE include)
+target_include_directories(${PROJECT_NAME} PRIVATE include)
 
 find_package(glfw3 CONFIG REQUIRED)
-    target_link_libraries(ProjectTemplate PRIVATE glfw)
+    target_link_libraries(${PROJECT_NAME} PRIVATE glfw)
 
 find_package(glad CONFIG REQUIRED)
-    target_link_libraries(ProjectTemplate PRIVATE glad::glad)
+    target_link_libraries(${PROJECT_NAME} PRIVATE glad::glad)
