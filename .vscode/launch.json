@@ -10,7 +10,9 @@
       "stopAtEntry": false,
       "cwd": "${command:cmake.launchTargetDirectory}",
       "environment": [],
-      "console": "externalTerminal"
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "logging": {"moduleLoad": false}
     },
     {
       "name": "LLDB",
