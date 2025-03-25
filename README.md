@@ -2,8 +2,8 @@
 
 ## Tools used
 
-- CMake >= 3.28.1
-- Ninja >= 1.11.1
+- CMake
+- Ninja
+- Vcpkg
 - Visual Studio 2022 MSVC 17.8.34322.80 (clang-cl)
-- vcpkg
-- Visual Studio Code (codeLLDB, clangd)
+- Visual Studio Code (clangd)
