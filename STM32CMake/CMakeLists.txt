@@ -42,9 +42,11 @@ else ()
 endif ()
 
 include_directories(
+    ${CMAKE_SOURCE_DIR}/Libraries/Core
     ${CMAKE_SOURCE_DIR}/Libraries/CMSIS
     ${CMAKE_SOURCE_DIR}/Libraries/STM32F10x_StdPeriph_Driver/inc
     ${CMAKE_SOURCE_DIR}/User
+    ${CMAKE_SOURCE_DIR}/Application
 )
 add_definitions( -D__MICROLIB -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD)
 
