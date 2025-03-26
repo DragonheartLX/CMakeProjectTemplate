@@ -9,16 +9,5 @@ set(CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install")
 
 project(ProjectTemplate)
 
-file(GLOB_RECURSE PROJ_Src LIST_DIRECTORIES false 
-    src/*.cpp
-    src/**/*.cpp)
-
-add_executable(${PROJECT_NAME} ${PROJ_Src})
-
-target_include_directories(${PROJECT_NAME} PRIVATE include)
-
-find_package(glfw3 CONFIG REQUIRED)
-    target_link_libraries(${PROJECT_NAME} PRIVATE glfw)
-
-find_package(glad CONFIG REQUIRED)
-    target_link_libraries(${PROJECT_NAME} PRIVATE glad::glad)
+add_subdirectory(Library)
+add_subdirectory(Application)
