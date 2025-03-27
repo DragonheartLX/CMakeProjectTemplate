@@ -92,8 +92,8 @@ aux_source_directory(${CMAKE_SOURCE_DIR}/Libraries/STM32F10x_StdPeriph_Driver/sr
 aux_source_directory(${CMAKE_SOURCE_DIR}/Application Application)
 aux_source_directory(${CMAKE_SOURCE_DIR}/User User)
 
-set(STARTUP       ${CMAKE_SOURCE_DIR}/Startup/startup_stm32f10x_md.s)
-set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/Startup/STM32F103XB_FLASH.ld)
+set(STARTUP       ${CMAKE_SOURCE_DIR}/Startup/startup_stm32f103xb.s)
+set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/Startup/STM32F103XX_FLASH.ld)
 
 add_link_options(-T ${LINKER_SCRIPT})
 
